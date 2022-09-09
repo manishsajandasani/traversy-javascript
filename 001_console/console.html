@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title></title>
+</head>
+
+<body>
+   <h1 id="pageTitle" style="text-align: center;"></h1>
+
+   <script>
+      let pageTitle = "console"
+      document.title = pageTitle;
+      document.getElementById("pageTitle").innerHTML = `<strong>${pageTitle}</strong>`; 
+   </script>
+
+   <script>
+      // Single Line Comment
+
+      /*
+         Multi 
+         Line
+         Comment
+      */
+
+      console.log("Manish");
+      console.log(123);
+      console.log(true);
+      var greeting = "Hello";
+      console.log(greeting);
+      console.log([1, 2, 3, 4]);
+      console.log({ a: 1, b: 2 });
+      console.table({ a: 1, b: 2 });
+
+      console.error("This is an error");
+      console.warn("This is a warning");
+
+      console.time("key")
+      console.log('Hi User');
+      console.log('Hi User');
+      console.log('Hi User');
+      console.log('Hi User');
+      console.log('Hi User');
+      console.log('Hi User');
+      console.log('Hi User');
+      console.log('Hi User');
+      console.timeEnd("key")
+
+      console.clear();
+   </script>
+</body>
+
+</html>
