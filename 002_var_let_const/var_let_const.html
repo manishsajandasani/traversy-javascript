@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title></title>
+</head>
+
+<body>
+   <h1 id="pageTitle" style="text-align: center;"></h1>
+
+   <script>
+      let pageTitle = "var / let / const"
+      document.title = pageTitle;
+      document.getElementById("pageTitle").innerHTML = `<strong>${pageTitle}</strong>`; 
+   </script>
+
+   <script>
+      var name = "Mohini";
+      console.log(name);
+      name = "Khan";
+      console.log(name);
+
+      // Initialize variable
+      var greeting;
+      console.log(greeting);
+      greeting = "Hi";
+      console.log(greeting);
+
+      // letters, numbers, underscores, $
+      // Can't start with numbers
+
+      // Multi Words Variables
+      var firstName = "Rahul"; // Camel Case - preferred for variables
+      var first_name = "Sandeep"; // Unserscore
+      var FirstName = "Chitragupt"; // Pascal Case - preferred for class
+      var firstname = "Rohan"; // Not preferred at all
+
+      // let and var are identical on global scope but different on block level scope
+      let game; // Initialization
+      game = "Ludo"; // Assigned
+      console.log(game);
+      game = "Football"; // Reassigned
+      console.log(game);
+
+      // const - can't be reassigned. have to be assigned a value
+      /*
+         const lastName;  --> error
+         const number = 123;
+         number = 456;  --> error 
+      */
+
+      const person = {
+         name: "Maya",
+         age: 30
+      }
+      console.log(person);
+      person.name = "Sarla";
+      console.log(person);
+
+      /* Gives Error
+      const person = {
+         name: "Rohan"
+      }
+      */
+
+      const numbers = [1, 2, 3, 4, 5];
+      numbers.push(6);
+      console.log(numbers);
+
+      /* Gives Error
+      numbers = [1, 2, 3, 4, 5, 6];
+      console.log(numbers);
+      */
+
+   </script>
+</body>
+
+</html>
